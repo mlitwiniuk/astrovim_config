@@ -32,7 +32,7 @@ return {
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
           "ruby",
-          "rb",
+          -- "rb",
           "erb",
           "lua",
           "js",
@@ -46,7 +46,7 @@ return {
         "ruby_ls",
         "solarized",
       },
-      timeout_ms = 1500, -- default format timeout
+      timeout_ms = 3500, -- default format timeout
       -- filter = function(client) -- fully override the default formatting function
       --   return true
       -- end
