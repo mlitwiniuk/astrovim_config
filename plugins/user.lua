@@ -9,9 +9,22 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-   {
-    'maxmx03/dracula.nvim',
+  {
+    "maxmx03/dracula.nvim",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000 -- make sure to load this before all the other start plugins
-   }
+    priority = 1000, -- make sure to load this before all the other start plugins
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    config = function()
+      require("catppuccin").setup {
+        flavour = "mocha", -- latte, frappe, macchiato, mocha
+        background = { -- :h background
+          light = "latte",
+          dark = "mocha",
+        },
+      }
+    end,
+  },
 }

@@ -17,7 +17,7 @@ return {
     },
   },
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "catppuccin",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -43,6 +43,7 @@ return {
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
+        "rubocop",
         "ruby_ls",
         "solarized",
       },
